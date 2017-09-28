@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello handlebars!</title>
+</head>
+<body>
+<h1>{{{common.meta.title}}}!</h1>
+<p>Пример доступа к атрибуту <code>id</code>: {{-id}}</p>
+
+<h2>Выводим все блоки с <code>place=block_wrapper</code></h2>
+
+{{applyTemplateByBlock select="-place=block_wrapper"}}
+
+</body>
+</html>
